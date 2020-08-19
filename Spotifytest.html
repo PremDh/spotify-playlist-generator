@@ -1,0 +1,81 @@
+<!--program to display spotify page-->
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <title>Spotify Playlist Generator</title> 
+  </head>
+  <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("genres").value;
+    }
+  </script>
+
+  <body>
+<!-- Main form starts here-->
+    <h2>Create a randomized playlist by selecting a genre and entering a duration of time.</h2> 
+
+    <!--  <form action="/action_page.php"> -->
+
+    
+<!--<form action="result_spotify.html" method="GET">-->
+<form method="POST">
+<!-- Dropdown menu for selecting playlist genre-->
+  <label for="genres">Select a genre:</label>
+  <select name="genres" id="genres" required>
+    <option value="edm">EDM</option>
+    <option value="jazz">Jazz</option>
+    <option value="rock">Rock</option>
+    <option value="soul">Soul</option>
+  </select>
+  
+  <br><br>
+
+  <!-- Textbox for entering playlist duration -->
+  <label for="quantity">Playlist Duration (at least 5 minutes):</label>
+  <input type="number" id="quantity" name="quantity" min="5" required>
+<br><br>
+<input type="submit" onclick="showInput()">
+
+</form>
+
+<!--<br>{{ quant }} <br> -->
+{{ gen }}
+
+
+<!-- <button onclick="myFunction()">Click me - Hello World!</button> -->
+
+<!--Remember to include div id "demo" in order for function to be performed after button is clicked.-->
+
+<!--test for hello world button - remove later.-->
+<!--
+<div id="button"></div> 
+
+<script>
+function myFunction() {
+    document.getElementById("button").innerHTML = "Hello World";
+}
+</script>
+
+<br> <br>
+
+ -->
+<!-- Test button for fetching date - delete later-->
+
+<!-- 
+<button onclick="getElementById('button').innerHTML=Date()">What is the current date and time?</button>
+
+<br> <br>
+-->
+<!-- Based on parameters - use methods from python file to fetch the song data
+1. Take the parameters from HTML user entries (playlist duration + genre)
+2. Call methods from the python/spotipy documentation
+which can take parameters (eg. genre recommendation)
+3. Parse the JSON file that is returned - JSON.parse(name of file)
+4. Create the chart - parse the song name, arist, album, song duration - place into chart
+(How is the output parsed tho??)
+-->
+
+
+  </body>
+</html>
