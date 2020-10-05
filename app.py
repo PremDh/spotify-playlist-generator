@@ -17,8 +17,8 @@ if __name__ == '__main__':
     app.run()
 
 #app.config['DEBUG'] = True
-SPOTIPY_CLIENT_ID='0e77c1340ad24899a28bba5a9dffbab2'
-SPOTIPY_CLIENT_SECRET='4ae7f46ea3ab4933bb3fbcdde6f585fa'
+SPOTIPY_CLIENT_ID='hidden'
+SPOTIPY_CLIENT_SECRET='hidden'
 
 from spotipy.oauth2 import SpotifyClientCredentials
 
