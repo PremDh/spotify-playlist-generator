@@ -5,11 +5,12 @@ import pandas as pd
 import json
 
 #logging.basicConfig( level=logging.DEBUG)
-    #filename='demo.log',
+#filename='demo.log',
 
 #format='%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 #where the flask app will start running upon trigger.
 #FLASK_APP=app.py
+#point where Flask APP initiates.
 app = Flask(__name__)
 
 if __name__ == '__main__':
