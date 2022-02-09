@@ -22,3 +22,6 @@ Running the application
 ```
 flask run
 ```
+
+
+![Screenshot (251)](https://user-images.githubusercontent.com/22993577/153158779-ea4781c6-8aa2-4af9-a374-f744f36c287e.png)
